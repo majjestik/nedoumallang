@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Nedoumallang Corp</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- BG IMAGES -->
+    <!-- <img src="images/plantains.jpg" alt="Plantains Image" class="bg-img"> -->
+    
+    <div class="bg-img">
+        <div class="bg-content d-flex justify-content-center align-items-center 
+            text-white montserrat-b mx-auto"
+        >
+            <a href="succursales.html" class="btn montserrat-b" id="bg-btn">
+                Savoir plus
+            </a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" id="index-nav">
+        <div class="container-fluid">
+
+            <span class="navbar-brand d-md-none">
+                <img src="images/logo/nedouLogo2.png" alt="Nedoumallang Logo" class="img-fluid">
+            </span>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link my-3 my-md-0 active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-3 my-md-0" href="about.html">A Propos de nous</a>
+                    </li>
+
+                    <div id="logo-wrapper">
+                        <span class="navbar-brand d-none d-md-block" id="logo-1">
+                            <img src="images/logo/nedouLogo2.png" alt="Nedoumallang Logo" class="img-fluid">
+                        </span>
+                        <span class="d-none d-md-block" id="logo-2">
+                            <img src="images/logo/nedouLogo2.png" alt="Nedoumallang Logo" class="img-fluid">
+                        </span>
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link  my-3 my-md-0" href="succursales.html">Nos Succursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  my-3 my-md-0" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- MAIN -->
+    <main id="index-content" class="">
+        
+        <div id="banner">
+            <img src="images/nedou-banner.jpg" alt="Nedou Banner">
+        </div>
+
+        <!-- NOS SECTEURS -->
+         <section id="secteurs">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <h3 id="block-title">Nos secteurs d'activités</h3>
+                        <div class="block-title-underline"></div>
+
+                        <p class="test-justify my-5">
+                            Nous sommes une entreprise ambitieuse et engagée, portée par une vision claire : créer de la valeur,
+                            innover localement et bâtir des solutions durables. Nos activités s’articulent autour de quatre piliers
+                            stratégiques :
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 my-3 my-lg-0">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/prestation de services.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title montserrat-b text-uppercase">
+                                    Prestation de services
+                                </h5>
+                                <p class="card-text text-justify text">
+                                    Nous proposons une large 
+                                    <span class="dots d-block" onclick="lirePlus(this)"></span>
+                                    <span class="extra">
+                                        gamme de services 
+                                        professionnels adaptés aux besoins des particuliers,
+                                        entreprises et institutions. <br>
+                                        Qu’il s’agisse de conseil, de gestion de projets ou de services
+                                        personnalisés, nous privilégions l’excellence, la réactivité et la satisfaction client.
+                                    </span>
+                                    <span class="less d-none" onclick="lireMoins(this)"></span>
+                                </p>
+                                <a href="succursales.html" class="btn btn-primary">Savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 my-3 my-lg-0">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/mad-books.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title montserrat-b text-uppercase">
+                                    Chaine d'édition 
+                                </h5>
+                                <p class="card-text text-justify text">
+                                    Passionnés par les mots et les idées, nous accompagnons 
+                                    <span class="dots d-block" onclick="lirePlus(this)"></span>
+                                    <span class="extra">
+                                        auteurs et penseurs dans la concrétisation
+                                        de leurs œuvres. <br><br>
+                                        De l’édition à la diffusion, notre maison d’édition s’engage à offrir une plateforme
+                                        d’expression riche et accessible, avec une attention particulière à la qualité des contenus.
+                                    </span>
+                                    <span class="less d-none" onclick="lireMoins(this)"></span>
+                                </p>
+                                <a href="succursales.html" class="btn btn-primary">Savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 my-3 my-lg-0">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/immo-const.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title montserrat-b text-uppercase">
+                                    Agence immobilière
+                                </h5>
+                                <p class="card-text text-justify text">
+                                    Dans le domaine de l’immobilier, nous œuvrons pour la  
+                                    <span class="dots d-block" onclick="lirePlus(this)"></span>
+                                    <span class="extra">
+                                        sécurisation et la valorisation concrétisation
+                                        de leurs œuvres. <br><br>
+                                        De l’édition à la diffusion, notre maison d’édition s’engage à offrir une plateforme
+                                        d’expression riche et accessible, avec une attention particulière à la qualité des contenus.
+                                    </span>
+                                    <span class="less d-none" onclick="lireMoins(this)"></span>
+                                </p>
+                                <a href="succursales.html" class="btn btn-primary">Savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 my-3 my-lg-0">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/afro-macabo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title montserrat-b text-uppercase">
+                                    Agroalimentaire
+                                </h5>
+                                <p class="card-text text-justify text">
+                                    Nous investissons dans la transformation et la 
+                                    <span class="dots d-block" onclick="lirePlus(this)"></span>
+                                    <span class="extra">
+                                        commercialisation de produits agricoles locaux. <br><br>
+                                        Notre
+                                        mission : <br><br>
+                                        promouvoir une alimentation saine, valoriser les productions locales et soutenir les chaînes
+                                        de valeur agricoles durables.
+                                    </span>
+                                    <span class="less d-none" onclick="lireMoins(this)"></span>
+                                </p>
+                                <a href="succursales.html" class="btn btn-primary">Savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-justify mt-5">
+                            Nous croyons en une entreprise au service de l’humain et du progrès. Chez <b>NEDOUMALLANG & Fils Corp SARL</b> , 
+                            chaque projet est une aventure que nous menons avec passion, rigueur et engagement.
+                            Ensemble, construisons l’avenir.
+                        </p> <br>
+
+                        <p class="text-center">
+                            Rejoignez-nous dans cette aventure collective et constructive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- NOS SUCCURSALES -->
+        <section class="my-5 py-5" style="background-color: #00d668;" id="section-succ">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <h3 id="block-title">Nos succursales</h3>
+                        <div class="block-title-underline" style="background-color: white;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 logo-wrapper">
+                        <img src="images/logo/agri-logo.jpg" alt="Agri logo" class="img-fluid grid-logo grid-logo-1">
+                        <img src="images/logo/arkana-logo.jpg" alt="Arkana logo" class="img-fluid grid-logo grid-logo-2">
+                        <img src="images/logo/ned-immob-logo.jpg" alt="Ned immob logo" class="img-fluid grid-logo grid-logo-3">
+                        <img src="images/logo/prest-ned-logo.jpg" alt="" class="img-fluid grid-logo grid-logo-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- NOS ENGAGEMENTS -->
+        <section class="my-5" id="engagement">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <h3 id="block-title">Nos engagements</h3>
+                        <div class="block-title-underline"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card card-1 text-justify montserrat-b" style="border: none;">
+                            <img src="images/eng-1.jpg" class="card-img-top" alt="engagement 1">
+    
+                            <div class="card-body">
+                                <p>
+                                    Contribuer au développement local et régional
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-2 text-justify montserrat-b" style="border: none;">
+                            <img src="images/jeunes.jpg" class="card-img-top" alt="engagement 1">
+    
+                            <div class="card-body">
+                                <p>
+                                    Créer de l'emploi et former des jeunes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-3 text-justify montserrat-b" style="border: none;">
+                            <img src="images/support.jpg" class="card-img-top" alt="engagement 1">
+    
+                            <div class="card-body">
+                                <p>
+                                    Offrir des services accessibles et de qualité
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-4 text-justify montserrat-b" style="border: none;">
+                            <img src="images/econs.jpg" class="card-img-top" alt="engagement 1">
+    
+                            <div class="card-body">
+                                <p>
+                                    Agir pour une économie plus juste et inclusive
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- SECTION FIN -->
+         <section id="ensemble">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <h3 id="block-title">Réussir ensemble</h3>
+                        <div class="block-title-underline"></div>
+                    </div>
+                </div>
+
+                <div class="row my-5 ">
+                    <div class="col-md-4">
+                        <h5 class="text-center montserrat-b text-uppercase">Carrières</h5>
+
+                        <div class="card bg-warning text-dark text-justify">
+                            <img src="images/career.jpeg" class="card-img-top" alt="">
+    
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Rejoindre <b>NEDOUMALLANG & Fils Corp</b> c’est intégrer une équipe passionnée, innovante et engagée dans le développement local. <br>
+                                    Nous croyons en la force des talents africains, à la formation continue et à la promotion interne.
+                                    Ensemble, faisons grandir nos ambitions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-center montserrat-b text-uppercase">Responsabilité sociétale</h5>
+
+                        <div class="card bg-new-green text-white text-justify">
+                            <img src="images/inclusiv.jpeg" class="card-img-top" alt="">
+    
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Agir avec éthique et inclusion. <br>
+                                    Nous construisons une entreprise fondée sur des valeurs de transparence, d’intégrité et d’égalité. <br><br>
+                                    Chaque secteur que nous développons intègre une démarche inclusive qui bénéficie à tous, sans discrimination.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-center montserrat-b text-uppercase">Pourquoi nous?</h5>
+
+                        <div class="card bg-warning text-dark test-justify">
+                            <img src="images/why.jpeg" class="card-img-top" alt="">
+    
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul style="margin-top: -9px;"> 
+                                        <li>Une expertise éprouvée</li>
+                                        <li>Un engagement fort pour la satisfaction client</li>
+                                        <li>Une vision panafricaine, humaine et durable</li>
+                                        <li>Une éthique solide, des résultats concrets</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+
+        
+        
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-dark">
+                    
+            <!-- Social media -->
+            <section class="d-flex justify-content-between p-4 text-white" id="footer-network">
+                <div class="me-5">
+                    <span>Suivez-nous sur nos réseaux sociaux:</span>
+                </div>
+    
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" id="copyright">
+                © 2025 Copyright, NEDOUMALLANG & Fils Corp
+            </div>
+        </footer>
+    </main>
+
+    
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+
+</body>
+</html>

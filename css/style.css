@@ -1,0 +1,583 @@
+@font-face {
+    font-family: "nasalization-rg";
+    src: url("../fonts/nasalization-rg.ttf");
+}
+@font-face {
+    font-family: "Aclonica";
+    src: url("../fonts/Aclonica.ttf");
+}
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster.otf");
+}
+@font-face {
+    font-family: "BroadcastTitling";
+    src: url("../fonts/BroadcastTitling.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+/* CUSTOM FONT CLASSES */
+.nasalization {
+    font-family: nasalization-rg;
+}
+.aclonica {
+    font-family: Aclonica;
+}
+.broadcastTitling {
+    font-family: BroadcastTitling;
+}
+.lobster {
+    font-family: Lobster;
+}
+.ubuntu {
+    font-family: Ubuntu-Regular;
+}
+.ubuntu-bold {
+    font-family: Ubuntu-Bold;
+}
+.montserrat {
+    font-family: Montserrat-Regular;
+}
+.montserrat-b {
+    font-family: Montserrat-Bold;
+}
+
+:root {
+    --logo-green : #00910f;
+    --pale-green: #46c588;
+    --new-green: #00d668;
+    --white: #fff;
+    --ubuntu: Ubuntu-Regular;
+    --montserrat: Montserrat-Regular;
+    --montserrat-b: Montserrat-Bold;
+    --dark: #212529;
+    --light-dark: #343a40;
+    --danger: #dc3545;
+}
+
+/* CUSTOM COLOR CLASSES */
+.logo-green {
+    color: var(--logo-green)
+}
+
+.pale-green {
+    color: var(--pale-green);
+}
+
+.text-white {
+    color: var(--white);
+}
+.dark {
+    color: var(--dark);
+}
+
+.bg-new-green {
+    background-color: var(--new-green);
+}
+
+
+/* GENERIC CLASSES */
+.italic {
+    font-style: italic;
+}
+
+.semi-bold {
+    font-weight: 545;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.spacer {
+    letter-spacing: 1px;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+
+body {
+    font-family: var(--montserrat), sans-serif;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.8);
+    animation: bgchange 40s infinite ease-in-out;
+}
+
+@keyframes bgchange {
+    0% {
+        background-image: url(../images/prestation-2.jpg);
+    }
+    25% {
+        background-image: url(../images/plantains.jpg);
+    }
+    50% {
+        background-image: url(../images/keys.jpg);
+    }
+    75%{
+        background-image: url(../images/arkana-1.jpg);
+    }
+    100% {
+        background-image: url(../images/prestation-2.jpg);
+    }
+}
+
+
+.bg-content::after {
+    content: "Une agiculture bio qui respecte la terre, nourrit l'homme et valorise l'Afrique";
+    position: absolute;
+    font-size: clamp(1.2rem, 4vw + 1rem, 2.8rem);
+    padding: 50px;
+    animation: changeText 40s infinite ease-in-out;
+}
+
+@keyframes changeText {
+    0% {
+        content: "Des idées claires, des solutions sur mesure, des projets qui aboutissent";
+        color: var(--dark);
+    }
+    24% {
+        content: "Une agiculture bio qui respecte la terre, nourrit l'homme et valorise l'Afrique";
+        color: var(--white);
+    }
+    49% {
+        content: "L'immobilier de confiance, au service de vos rêves";
+    }
+    75% {
+        content: "Arkana Publishing House... Là où les idées prennent vie";
+        color: var(--new-green);
+    }
+    100% {
+        content: "Des idées claires, des solutions sur mesure, des projets qui aboutissent";
+        color: var(--dark);
+    }
+}
+
+#bg-btn {
+    position: relative;
+    top: 150px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    color: var(--dark);
+    transition: all .5s ease-in-out;
+}
+
+#bg-btn:hover {
+    color: var(--white);
+    background-color: var(--logo-green);
+    border: 2px solid var(--logo-green);
+}
+
+#index-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+#nav-2 {
+    background-color: var(--new-green);
+}
+
+.navbar {
+    padding: 1px 0;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding: 0 2em;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.navbar .navbar-nav .nav-link {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 14px;
+    transform-origin: right;
+    transition: all .3s;
+    position: relative;
+}
+
+
+
+.navbar-nav .nav-item {
+    padding: 10px 0;
+    margin: 0 2em;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+
+.navbar-nav .active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark);
+    transform: scaleX(1);
+}
+
+#logo-1 {
+    opacity: 0;
+}
+
+#logo-2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    top: 0;
+    z-index: 999;
+    width: 100px;
+    opacity: 1;
+}
+
+.btn-submit {
+    font-family: var(--montserrat-b);
+    border: 3px solid var(--new-green);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all .4s;
+}
+
+.btn-submit:hover {
+    background-color: var(--new-green);
+    color: var(--white);
+}
+
+#index-content {
+    position: absolute;
+    top: calc(100vh + 5px);
+}
+
+#banner img {
+    width: 100%;
+    margin: 3em 0;
+}
+
+#block-title {
+    text-transform: uppercase;
+    font-family: var(--montserrat-b);
+}
+
+.block-title-underline {
+    background-color: var(--new-green);
+    height: 5px;
+    max-width: 100px;
+    margin-bottom: 35px;
+}
+
+.card .img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .btn {
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--dark);
+    border: 2px solid var(--logo-green);
+    font-family: var(--montserrat-b);
+    transition: all .5s ease-in-out;
+}
+
+.card .btn:hover {
+    background-color: var(--logo-green);
+    color: var(--white);
+    border: 2px solid var(--logo-green);
+}
+
+#secteurs .card {
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes appear-1 {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.logo-wrapper {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 370px 320px 395px);
+    grid-template-rows: 150px 1fr;
+    gap: 20px;
+    justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+/* .grid-logo {
+    border: 2px solid var(--danger);
+} */
+
+.grid-logo-1 {
+    
+}
+
+.grid-logo-2 {
+    
+}
+
+.grid-logo-3 {
+    
+}
+
+.grid-logo-4 {
+    grid-column: span 2;
+    align-self: center;
+}
+
+
+#engagement img {
+    border-radius: 15px;
+}
+
+#engagement .card-1 {
+    animation: engAppear-1 linear;
+    animation-duration: 1000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#engagement .card-2 {
+    animation: engAppear-2 linear;
+    animation-duration: 1800ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#engagement .card-3 {
+    animation: engAppear-3 linear;
+    animation-duration: 2300ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#engagement .card-4 {
+    animation: engAppear-4 linear;
+    animation-duration: 3000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes engAppear-1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes engAppear-2 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes engAppear-3 {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes engAppear-4 {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#ensemble img {
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ensemble .card {
+    animation: ensAppear linear;
+    animation-duration: 3000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes ensAppear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+footer {
+    background-color: #17884d;
+}
+
+#footer-network {
+    background-color: var(--pale-green);
+}
+
+#footer-network a {
+    text-decoration: none;
+}
+
+#footer-network i {
+    transition: all 0.3s ease-in-out;
+}
+
+#footer-network i:hover {
+    color: var(--light-dark);
+}
+
+#copyright {
+    font-size: small;
+}
+
+@media screen and (min-width: 769px) {
+    
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 861px) {
+       
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        align-items: start;
+    }
+
+
+    .bg-content {
+        width: 90%;
+    }
+
+    @keyframes changeText {
+        0% {
+            content: "Une agiculture bio qui respecte la terre, nourrit l'homme et valorise l'Afrique";
+        }
+        25% {
+            content: "L'immobilier de confiance, au service de vos rêves";
+        }
+        75% {
+            content: "Arkana Publishing House... Là où les idées prennent vie";
+        }
+        100% {
+            content: "Une agiculture bio qui respecte la terre, nourrit l'homme et valorise l'Afrique";
+        }
+    }
+
+    .logo-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-logo-3 {
+        width: 50%;
+    }
+
+}
