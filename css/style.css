@@ -379,27 +379,6 @@ body {
     grid-template-rows: 150px 1fr;
     gap: 20px;
     justify-content: center;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-    align-items: center; */
-}
-
-/* .grid-logo {
-    border: 2px solid var(--danger);
-} */
-
-.grid-logo-1 {
-    
-}
-
-.grid-logo-2 {
-    
-}
-
-.grid-logo-3 {
-    
 }
 
 .grid-logo-4 {
@@ -485,8 +464,7 @@ body {
 
 #ensemble img {
     height: auto;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    aspect-ratio: 16/9;
     display: flex;
     justify-content: center;
     align-items: center;
