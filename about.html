@@ -51,7 +51,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="about">
         <div class="row">
             <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
                 <h3 class="montserrat-b text-uppercase text-center mt-5 mb-4">à propos de nous</h3>
@@ -92,7 +92,7 @@
                 <b>NEDOUMALLANG & Fils Corp</b> n’est pas simplement le fruit d’un projet économique, c’est d’abord une histoire humaine et familiale, née d’une volonté d’entreprendre différemment, dans le respect des valeurs, avec une vision à long terme. 
             </div>
             <div class="col-md-8 col-lg-5">
-                <p class="text-justify" style="line-height: 1.8;">
+                <p class="text-justify parag-text" style="line-height: 1.8;">
                     Depuis ses débuts, le groupe a su évoluer,
                     s'adapter, diversifier ses activités et tisser un réseau de compétences autour de pôles complémentaires, pour répondre aux besoins croissants d'une population en quête de services fiables, modernes et accessibles. <br>
                     Jour après jour, nous avons construit des fondations solides, basé notre croissance sur l’expertise, la formation continue, la rigueur, la transparence et la foi
@@ -104,14 +104,16 @@
                 </p>
             </div>
             <div class="col-md-4 col-lg-5 offset-lg-1">
-                <img src="images/multi servs.jpg" alt="Multi servs img" class="img-fluid">
+                <img src="images/multi servs.jpg" alt="Multi servs img" class="img-fluid parag-img">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-6">
-                <h6 class="text-capitalize montserrat-b" style="color: gray;">Notre Mission</h6>
-                <img src="images/macabo.jpg" alt="" class="img-fluid">
+            <div class="col-md-6" id="mission">
+                <h6 class="text-capitalize montserrat-b mb-4" style="color: gray;">Notre Mission</h6>
+                <img src="images/mission.jpg" alt="" class="img-fluid" 
+                    style="max-height: 363px; width: 100%; object-fit: cover;"
+                >
 
                 <p class="text-justify mt-3" style="line-height: 1.8;">
                     <b>Accompagner, transformer, bâtir</b>. <br>
@@ -119,8 +121,8 @@
                 </p>
             </div>
 
-            <div class="col-md-6">
-                <h6 class="text-capitalize montserrat-b" style="color: gray;">Notre Vision</h6>
+            <div class="col-md-6" id="vision">
+                <h6 class="text-capitalize montserrat-b mb-4" style="color: gray;">Notre Vision</h6>
                 <img src="images/macabo.jpg" alt="" class="img-fluid">
 
                 <p class="text-justify mt-3" style="line-height: 1.8;">
@@ -130,23 +132,28 @@
             </div>
         </div>
 
-        <div class="row my-5 d-none">
+        <div class="row my-5">
             <div class="col-md-12">
                 <h6 class="text-capitalize montserrat-b text-center mb-5" style="color: gray;">Nos valeurs</h6>
-                <ul style="list-style-type: none; display: inline;" class="d-flex justify-content-center">
-                    <li class="px-3">
+                <ul 
+                    style="list-style-type: none; display: inline; display: flex;
+                        flex-wrap: wrap; justify-content: space-between; padding: 5px;
+                    
+                    "
+                >
+                    <li class="">
                         <i class="fa fa-compass" aria-hidden="true"></i> Professionnalisme
                     </li>
-                    <li class="px-3">
+                    <li class="">
                         <i class="fa fa-compass" aria-hidden="true"></i> Intégrité
                     </li>
-                    <li class="px-3">
+                    <li class="">
                         <i class="fa fa-compass" aria-hidden="true"></i> Esprit d’innovation
                     </li>
-                    <li class="px-3">
+                    <li class="">
                         <i class="fa fa-compass" aria-hidden="true"></i> Respect des engagements
                     </li>
-                    <li class="px-3">
+                    <li class="">
                         <i class="fa fa-compass" aria-hidden="true"></i> Développement local
                     </li>
                 </ul>
@@ -193,7 +200,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/navbar.js"></script>
     <script type="text/javascript">
         AOS.init();
     </script>

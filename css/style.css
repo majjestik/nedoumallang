@@ -488,6 +488,79 @@ body {
     }
 }
 
+#about .parag-text {
+    animation: aboutAppear-1 linear;
+    animation-duration: 3000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes aboutAppear-1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#about .parag-img {
+    animation: aboutAppear-2 linear;
+    animation-duration: 3000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes aboutAppear-2 {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+#mission {
+    animation: aboutAppear-3 linear;
+    animation-duration: 3000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes aboutAppear-3 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#vision {
+    animation: aboutAppear-4 linear;
+    animation-duration: 3000ms;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes aboutAppear-4 {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
 footer {
     background-color: #17884d;
 }
