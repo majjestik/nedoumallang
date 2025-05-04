@@ -560,6 +560,49 @@ body {
     }
 }
 
+/* SUCCURSALES PAGE */
+#succursales #menu-tab ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+#succursales #menu-tab li {
+    border: 1px solid var(--new-green);
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: var(--montserrat-sm);
+    font-size: 14px;
+    margin-right: 2px;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+    text-align: center;
+    transition: all ease-in-out 200ms;
+}
+
+#succursales #menu-tab li:hover {
+    cursor: pointer;
+}
+
+#succursales #menu-tab a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#succursales #text-tab {
+    border: 1px solid var(--new-green);
+    margin-top: -17px;
+    border-radius: 0 15px 15px 15px;
+}
+
+.active-tab {
+    background-color: var(--new-green);
+    font-weight: bold;
+}
+
 
 footer {
     background-color: #17884d;
