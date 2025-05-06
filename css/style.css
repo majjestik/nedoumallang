@@ -603,6 +603,16 @@ body {
     font-weight: bold;
 }
 
+#contactForm .error {
+    color: var(--danger);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#contactForm .form-control {
+    color: var(--dark);
+    font-size: 15px;
+}
 
 footer {
     background-color: #17884d;

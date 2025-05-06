@@ -99,7 +99,7 @@
                             <i class="h5 bi bi-envelope-at-fill"></i>
                             <span class="mx-3">
                                 <b>Email :</b> 
-                                <a href="" style="color: #00d668;">
+                                <a href="contact@nedoumallangcorp.com" style="color: #00d668;">
                                     contact@nedoumallangcorp.com
                                 </a>
                             </span> 
@@ -108,24 +108,11 @@
                             <i class="h5 bi bi-globe2"></i>
                             <span class="mx-3">
                                 <b>Site internet :</b> 
-                                <a href="" style="color: #00d668;">
+                                <a href="https://www.nedoumallangcorp.com" style="color: #00d668;">
                                     https://www.nedoumallangcorp.com
                                 </a>
                             </span> 
                         </div>
-
-                        <!-- <h5 class="text-uppercase montserrat-sm  my-4">Direction générale</h5>
-
-                        <span class="montserrat-b">Cameroun</span>
-                        <div class="my-2">
-                            <i class="h5 bi bi-telephone-fill"></i>
-                            <span class="mx-3"><b>Tél :</b>  +(237) 672 315 904</span> 
-                        </div>
-                        <div class="my-2">
-                            <i class="h5 bi bi-envelope-at-fill"></i>
-                            <span class="mx-3"><b>Email :</b> <a href="">directioncam@hopforall.org</a></span> 
-                        </div>
-                        <br> -->
                         
                     </div>
                 </div>
@@ -135,23 +122,30 @@
                     <p class="montserrat-sm mb-5">
                         Un préoccupation particulière, laissez nous un message!
                     </p>
-                    <form action="" method="POST" id="contactForm">
+
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                        <input type="hidden" name="access_key" value="8929399a-5301-4825-aaaa-3c12796aceea">
 
                         <div class="mb-3">
-                            <label for="name" class="form-label montserrat-sm">Nom</label>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom"> 
+                            <label for="name" class="form-label montserrat-reg">Nom</label>
+                            <input type="text" name="name" class="form-control text-dark montserrat-reg" id="name" placeholder="Votre nom"> 
+                            <span class="error" id="nameErr"></span>
                         </div>
                         <div class= "mb-3">
-                            <label for="email" class="form-label montserrat-sm">Adresse email</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                            <label for="email" class="form-label montserrat-reg">Adresse email</label>
+                            <input type="email" name="email" class="form-control text-dark montserrat-reg" id="email" placeholder="name@example.com">
+                            <span class="error" id="emailErr"></span>
                         </div>
                         <div class="mb-3">
-                            <label for="objet" class="form-label montserrat-sm">Objet</label>
-                            <input type="text" name="objet" class="form-control" id="objet" placeholder="Objet">
+                            <label for="objet" class="form-label montserrat-reg">Objet</label>
+                            <input type="text" name="objet" class="form-control text-dark montserrat-reg" id="objet" placeholder="Objet">
+                            <span class="error" id="objetErr"></span>
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label montserrat-sm">Message</label>
-                            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Votre message"></textarea>
+                            <label for="message" class="form-label montserrat-reg">Message</label>
+                            <textarea class="form-control text-dark montserrat-reg" name="message" id="message" rows="3" placeholder="Votre message"></textarea>
+                            <span class="error" id="messageErr"></span>
                         </div>
 
                         <button type="submit" name="sendMessage" id="sendMessage" 
@@ -203,10 +197,13 @@
 
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/contactForm.js"></script>
     <script type="text/javascript">
         AOS.init();
     </script>
